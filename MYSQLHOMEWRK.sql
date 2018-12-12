@@ -19,6 +19,12 @@ SELECT country, country_id
 FROM country
 WHERE country IN ('Afganistan', 'Bangladesh', 'China');
 
+SELECT * FROM actor
+	ALTER TABLE actor
+    ADD COLUMN description BLOB 
+    
+
+    
 
 
     
