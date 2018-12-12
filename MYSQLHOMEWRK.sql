@@ -21,7 +21,21 @@ WHERE country IN ('Afganistan', 'Bangladesh', 'China');
 
 SELECT * FROM actor
 	ALTER TABLE actor
-    ADD COLUMN description BLOB 
+    ADD COLUMN description BLOB;
+
+
+SELECT * FROM actor
+	ALTER TABLE actor
+    DROP COLUMN description;
+    
+SELECT last_name, COUNT()
+FROM actor
+GROUP BY last_name
+
+
+
+    
+
     
 
     
