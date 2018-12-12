@@ -14,6 +14,11 @@ SELECT * FROM actor
 	WHERE last_name LIKE '%LI%'
 	ALTER TABLE actor
 	ADD COLUMN last_name INT AUTO_INCREMENT PRIMARY KEY FIRST;
-    
+
+SELECT country, country_id
+FROM country
+WHERE country IN ('Afganistan', 'Bangladesh', 'China');
+
+
 
     
