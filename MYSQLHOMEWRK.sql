@@ -30,7 +30,37 @@ SELECT * FROM actor
     
 SELECT last_name, COUNT()
 FROM actor
-GROUP BY last_name
+GROUP BY last_name;
+    
+SELECT COUNT(last_name)  
+	FROM actor;
+    
+INSERT INTO actors (first_name, last_name) values ('Harpo', 'Williams')
+INSERT INTO actors (first_name, last_name) values ('Groucho', 'Williams');
+SELECT * FROM actor;
+
+SELECT first_name, last_name
+FROM staff
+JOIN address ON staff.address = staff.address;
+
+SELECT first_name, last_name
+FROM staff
+JOIN payment ON staff.payment = staff.payment;
+
+SELECT title 
+FROM film 
+INNER JOIN film_actor ON film.film_actor = film.film_actor;
+
+SELECT COUNT('Hunchback Impossible')
+	FROM film;
+    
+
+
+
+
+
+    
+
 
 
 
