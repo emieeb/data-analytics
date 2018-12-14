@@ -54,6 +54,10 @@ INNER JOIN film_actor ON film.film_actor = film.film_actor;
 SELECT COUNT('Hunchback Impossible')
 	FROM film;
     
+SELECT first_name, last_name
+	FROM customer
+    JOIN payment ON payment.amount = payment.amount 
+    
 
 
 
